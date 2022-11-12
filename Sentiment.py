@@ -176,7 +176,7 @@ def tweetSentiment(tweet_df):
     
     st.markdown("### Tweet Distribution")
     tweetChart(positive, negative, neutral)
-    st.markdown("### Tweet propotions")
+    st.markdown("### Tweet proportions")
     tweet_pie(positive, negative, neutral)
 
     #Statistics
