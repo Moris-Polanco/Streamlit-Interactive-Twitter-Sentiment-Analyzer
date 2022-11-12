@@ -23,7 +23,7 @@ def show_stats2(positive, negative, polarity_list, subjectivity_list):
     avg_subj = sum(subjectivity_list)/len(subjectivity_list) 
     subj2 = [subjectivity_list[i] for i in range(len(subjectivity_list)) if not polarity_list[i]==0]
     avg_subj2 = sum(subj2)/len(subj2)
-    st.markdown("## Statistics")
+    st.markdown("## Estadísticas")
     st.markdown("---")
 
     
@@ -78,23 +78,23 @@ def show_stats(positive, negative, polarity_list, subjectivity_list):
     avg_subj = sum(subjectivity_list)/len(subjectivity_list) 
     subj2 = [subjectivity_list[i] for i in range(len(subjectivity_list)) if not polarity_list[i]==0]
     avg_subj2 = sum(subj2)/len(subj2)
-    st.markdown("## Statistics")
+    st.markdown("## Estadísticas")
     st.markdown("---")
     col1, col2 = st.columns([1, 1])
     with col1:
-        st.markdown("###### Average Polarity")
+        st.markdown("###### Polaridad media")
         st.markdown("###### [-1 to 1]")
         st.markdown("")
 
-        st.markdown("###### Average Subjectivity")
+        st.markdown("###### Subjetividad media")
         st.markdown("###### [0 to 1]")
         st.markdown("")
 
-        st.markdown("###### Average Subjectivity")
-        st.markdown("###### Of Non-NeutralTweets ")
+        st.markdown("###### Subjetividad media")
+        st.markdown("###### de Tweerts no neutros ")
         st.markdown("")
 
-        st.markdown("###### Positive / Negative Ratio")
+        st.markdown("###### Ratio Positivo / Negativo")
         
     with col2:
         st.write(avg_pol)
@@ -119,34 +119,34 @@ def show_stats(positive, negative, polarity_list, subjectivity_list):
     return avg_pol, avg_subj
 
 def show_analysis(avg_pol, avg_subj):
-    st.markdown("## Analysis")
+    st.markdown("## Análisis")
     st.markdown("---")
 
-    st.markdown("##### Level of Emotion")
+    st.markdown("##### Nivel de emoción")
     if avg_pol>=0.25:
         st.markdown('''
-            High positive average polarity indicates that most tweets have strong and positive opinions about the searched topic
+            La alta polaridad media positiva indica que la mayoría de los tweets tienen opiniones fuertes y positivas sobre el tema buscado
         ''')
     
     elif avg_pol<=-0.25:
         st.markdown('''
-            High negative average polarity indicates that most tweets have strong and negative opinions about the searched topic
+            La alta polaridad media negativa indica que la mayoría de los tweets tienen opiniones fuertes y negativas sobre el tema buscado
         ''')
 
     else:
         st.markdown('''
-            Moderate average polarity indicates that most tweets are somewhat neutral about the searched topic and do not exhibit strong opinions about it
+            La polaridad media moderada indica que la mayoría de los tweets son algo neutrales sobre el tema buscado y no muestran opiniones fuertes al respecto
         ''')
     
-    st.markdown("##### Level of Subjectivity")
+    st.markdown("##### Nivel de subjetividad")
     if avg_subj>=0.35:
         st.markdown('''
-            High average subjectivity indicates that most tweets are highly subjective to the person tweeting about the searched topic
+            Una subjetividad media alta indica que la mayoría de los tweets son muy subjetivos para la persona que tuitea sobre el tema buscado
         ''')
 
     else:
         st.markdown('''
-            Moderate average subjectivity indicates that most tweets are more in general sense rather than being subjective about the searched topic
+            La subjetividad media moderada indica que la mayoría de los tweets son más bien de sentido general que subjetivos sobre el tema buscado
         ''')
     
 
@@ -174,9 +174,9 @@ def tweetSentiment(tweet_df):
     for i in tweet_df["Subjectivity"]:
         subjectivity_list.append(i)
     
-    st.markdown("### Tweet Distribution")
+    st.markdown("### Distribución de tweets")
     tweetChart(positive, negative, neutral)
-    st.markdown("### Tweet proportions")
+    st.markdown("### Proporciones de tweets")
     tweet_pie(positive, negative, neutral)
 
     #Statistics
