@@ -2,7 +2,7 @@ from numpy import negative, positive
 import streamlit as st
 from textblob import TextBlob
 import pandas as pd
-from textblob.es import polarity, subjectivity
+from textblob.sp import polarity, subjectivity
 from chart import *
 
 
