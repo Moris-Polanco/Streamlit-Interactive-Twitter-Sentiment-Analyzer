@@ -31,7 +31,7 @@ if show_page=="Welcome":
         ---
         ##### Agunas cosas para tener en cuenta
         
-        - ###### Por ahora, el sistema analiza principalmente tweets en inglés.
+        - ###### El sistema busca tweets en español, los traduce al inglés y luego aplica la librería python textblob para el análisis de sentimientos; el resultado se da en términos de polaridad y subjetividad.
         - ###### La polaridad se refiere a la fuerza de la emoción 
             - -1 es fuertemente negativo y
             - +1 es fuertemente positivo
