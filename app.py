@@ -25,20 +25,21 @@ if show_page=="Welcome":
     '''
         ---
         ##### Para empezar:
-        - ###### Vaya al menú de la columna izquierda
-        - ###### Elija el método que se utilizará para el análisis de sentimientos [Seleccione la página deseada en el menú desplegable]
-        - ###### Pruebe los distintos métodos y vea el análisis
+        - ###### Vaya al menú de la columna izquierda.
+        - ###### Elija el método que se utilizará para el análisis de sentimientos [Seleccione la página deseada en el menú desplegable].
+        - ###### Pruebe los distintos métodos y vea el análisis.
         ---
         ##### Agunas cosas para tener en cuenta
         
         - ###### El sistema busca tweets en español, los traduce al inglés y luego aplica la librería python textblob para el análisis de sentimientos; el resultado se da en términos de polaridad y subjetividad.
-        - ###### La polaridad se refiere a la fuerza de la emoción 
+        - ###### La polaridad se refiere a la fuerza de la emoción. 
             - -1 es fuertemente negativo y
             - +1 es fuertemente positivo
-        - ###### La subjetividad, como su nombre indica, se refiere al grado de subjetividad del texto
+        - ###### La subjetividad, como su nombre indica, se refiere al grado de subjetividad del texto.
             - 0 es completamente objetivo
             - 1 es completamente subjetivo 
-        - ###### Como todos los sistemas de aprendizaje automático, no será 100% preciso y podría tener sesgos
+        - ###### Como todos los sistemas de aprendizaje automático, no será 100% preciso y podría tener sesgos.
+        - ###### Sistema creado por Jayan Taneja y adaptado al español por Moris Polanco.
         ---
     '''
 
