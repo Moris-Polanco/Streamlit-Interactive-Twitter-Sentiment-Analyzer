@@ -20,10 +20,10 @@ def scrape_tweets(search_query, max_tweets_count=10,start=0, end=0):
         if fetched_tweets_no>=max_tweets_count:
             break
         
-        tweets_list2.append([tweet.date, tweet.id, tweet.content, tweet.user.username])
+        tweets_list2.append([tweet.date, tweet.content, tweet.user.username])
         
         po, su = sentiment(tweet.content)
-        tweets_list3.append([tweet.date, tweet.id, clean(tweet.content), po, su, tweet.user.username])
+        tweets_list3.append([tweet.date, clean(tweet.content), po, su, tweet.user.username])
         
     # Creating a dataframe from the tweets list above
     tweets_df2 = pd.DataFrame(tweets_list2, columns=['Datetime', 'Text', 'Username'])
