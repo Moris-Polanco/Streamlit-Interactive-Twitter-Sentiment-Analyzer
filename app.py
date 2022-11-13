@@ -30,7 +30,8 @@ if show_page=="Welcome":
         - ###### Pruebe los distintos métodos y vea el análisis
         ---
         ##### Agunas cosas para tener en cuenta
-
+        
+        - ###### De entrada, el sistema analiza tweets en inglés, a menos que se le indique que busque los de un usuario particular (para ello, usar #, como en #ufmedu)
         - ###### La polaridad se refiere a la fuerza de la emoción 
             - -1 es fuertemente negativo y
             - +1 es fuertemente positivo
