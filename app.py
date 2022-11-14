@@ -1,5 +1,5 @@
 import streamlit as st
-from sentiment_analysis_spanish import sentiment_analysis
+from Sentiment import *
 from chart import *
 from Scrape import *
 import datetime
