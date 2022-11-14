@@ -15,7 +15,7 @@ def scrape_tweets(search_query, max_tweets_count=10,start=0, end=0):
     tweets_list3 = []
 
     # Using TwitterSearchScraper to scrape data and append tweets to list
-    for fetched_tweets_no, tweet in enumerate(sntwitter.TwitterSearchScraper('{} since:{} until:{} lang:es'.format(search_query, start, end)).get_items()):
+    for fetched_tweets_no, tweet in enumerate(sntwitter.TwitterSearchScraper('{} since:{} until:{} lang:en'.format(search_query, start, end)).get_items()):
         
         if fetched_tweets_no>=max_tweets_count:
             break
