@@ -31,7 +31,7 @@ if show_page=="Welcome":
         ---
         ##### Agunas cosas para tener en cuenta
         
-        - ###### El sistema busca tweets en español, los traduce al inglés y luego aplica la librería python textblob para el análisis de sentimientos; el resultado se da en términos de polaridad y subjetividad.
+        - ###### Por ahora, el sistema solamente analiza tweets en inglés
         - ###### La polaridad se refiere a la fuerza de la emoción. 
             - -1 es fuertemente negativo y
             - +1 es fuertemente positivo
@@ -39,7 +39,7 @@ if show_page=="Welcome":
             - 0 es completamente objetivo
             - 1 es completamente subjetivo 
         - ###### Como todos los sistemas de aprendizaje automático, no será 100% preciso y podría tener sesgos.
-        - ###### Sistema creado por Jayan Taneja y adaptado al español por Moris Polanco.
+        - ###### Sistema creado por Jayan Taneja y adaptado para asesorialinguistica.online por Moris Polanco.
         ---
     '''
 
