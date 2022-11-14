@@ -1,5 +1,4 @@
 import streamlit as st
-from Sentiment import *
 from sentiment_analysis_spanish import sentiment_analysis
 from chart import *
 from Scrape import *
