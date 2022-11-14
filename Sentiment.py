@@ -5,22 +5,7 @@ import pandas as pd
 from textblob.en import polarity, subjectivity
 from chart import *
 
-#Detect language and translate to English
-def get_tweet_sentiment(self, tweet):
-        analysis = TextBlob(self.clean_tweet(tweet))
-        language = analysis.detect_language()
-        if language == 'en':
-            analysis_ready = analysis
-        else:
-            analysis_ready = analysis.translate(to='en')
-            
-        if analysis_ready.sentiment.polarity > 0: 
-            return 'positive'
-        elif analysis_ready.sentiment.polarity == 0: 
-            return 'neutral'
-        else: 
-            return 'negative'
-        
+  
 #Sentiment analyser
 def sentiment(text, corrspell=False):
     blob = TextBlob(text)
